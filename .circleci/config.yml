@@ -29,6 +29,7 @@ jobs:
           name: Install API Dependencies
           command: |
             npm run api:install
+            cd udagram/udagram-api eb init udagram-api --platform node.js --region us-east-1
       # TODO: Lint the frontend
       - run:
           name: Front-End Lint
