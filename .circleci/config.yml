@@ -47,21 +47,18 @@ jobs:
           name: API Build
           command: |
             npm run api:build
-      - run:
-          name: Deploy App
-          command: |
-            npm run deploy
- deploy:
+ # deploy step will run only after manual approval
+  deploy:
     docker:
       - image: "cimg/base:stable"
       # more setup needed for aws, node, elastic beanstalk
     steps:
       - node/install:
           node-version: '14.15' 
-      - checkout
       - eb/setup
       - aws-cli/setup
-    - run:
+      - checkout
+      - run:
           name: Deploy App
           command: |
             npm run deploy
@@ -78,7 +75,6 @@ workflows:
           type: approval
           requires:
             - build
-        - deploy:
+      - deploy:
           requires:
             - hold
-  
