@@ -30,6 +30,8 @@ make surev also to add enviromental variables to your project setting to be able
 
 in the YML.config it runs the scripts inside the package.json which opens the path folder for front-end and api and runs the scripts inside the package.json of each file.
 
+please REview the project Diagram Folder to understand better
+
 install packages for both frontend and backend
 `npm run frontend:install`
 `npm run api:install`
