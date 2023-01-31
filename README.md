@@ -4,7 +4,7 @@
 
 This project will show how i have connected the frontend Angular web app with an api express.js app and with a PostgreSQL on AWS server. The screenshots of the circleci and the database are provided 
 
-Here is the link to the hosted full-satck website:
+Please click the link to access the deployed Udagram 
 (press Here)[http://elasticbeanstalk-us-east-1-502317859992.s3-website-us-east-1.amazonaws.com/]
 
 ### Dependencies
