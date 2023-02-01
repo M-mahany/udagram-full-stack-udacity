@@ -6,7 +6,7 @@
 
 ## installation of pipline and GitHub:
 - you need tp create a new account at Circleci pipline and connect it to your GitHub account and chose the Repository you wich to deploy.
-- once the GitHub and the Circleci is connected toghether you will automate the deployment process because `Github` triggers `Circleci` everytime you `git add -A` `git commit -m "deploy"` `git push  https://[github repository]` from your local computer. Circleci pipline will do the rest for you. it will install dependencies, run build script and deploy script only by pushing your repo. you will need to write the script manually just once and every time afterward will be automated.
+- once the GitHub and the Circleci is connected toghether you will automate the deployment process because `Github` triggers `Circleci` everytime you `git push origin main https://[github repository]` from your local computer. Circleci pipline will do the rest for you. it will install dependencies, run build script and deploy script only by pushing your repo. you will need to write the script manually just once and every time afterward will be automated.
 
 ## CircleCi
 serup needs `config.yml` to run. config.yml file contains the dependecies and dependencies version to run. steps and orders of scripts to run. CircleCi allows us also to hold the `deploy` step to hold and await for approval as follwing 
